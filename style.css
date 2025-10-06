@@ -11,6 +11,7 @@
     height: 60px;
     width: 100%;
     position: fixed;
+    z-index: 1000;
 }
 
 .nav-links{
@@ -37,28 +38,434 @@
     font-family: inherit;
 }
 
-.firtscreen{
+.firstcreen{
     background-color: #E8E8E8;
-    height: 100vh;
+     min-height: 100vh;
+    padding-top: 60px;
+    
+}
+
+.second-screen{
+    background-color: #E8E8E8;
+    min-height: 100vh;
     padding-top: 60px;
 }
+
+.third-screen{
+    background-color: #E8E8E8;
+    min-height: 100vh;
+    padding-top: 60px;
+}
+
+
 
 .intro{
     display: flex;
     justify-content: center;
     padding-top: 80px;
+  
+    
 }
 
+
+
+
 .left-first{
-    background-color: #FFB800;
-    height: 80vh;
+   
+    height: 100%;
     width: 45%;
     border-radius: 10px;
 }
 
 .right-first{
-    background-color: #00ff00;
-    height: 80vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 100%;
     width: 45%;
+}
+
+.header-intro{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #3AADFF;
+    font-family: 'Inter', sans-serif;
+}
+
+.text-intro{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+    line-height: 1.5;
+    background: linear-gradient(135deg, #ece4e4 0%, #ece4e4 50%, #c2bfbf 100%);
+    opacity: 0.8;
+    border-radius: 20px;
+}
+
+
+
+.btn-box-intro{
+    margin-top: 60px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #FFFFFE;
+    background-color: #46FF52;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+
+.text-img{
+    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    padding-top: 200px;
+
+}
+
+
+.about-me{
+    display: flex;
+    background-color: #E8E8E8;
+   
+   
+}
+
+
+
+.img-about{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+
+.right-second{
+    height: 100%;
+    width: 100%;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    
+}
+
+
+
+.Person-about{
+    width: 80%;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    gap: 20px;
+    height: 100%;
+}
+
+.Person-info{
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+.Person-topic{
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #3AADFF;
+    color: #FFFFFE;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.Person-detail{
+    font-size: 1rem;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+
+.text-person{
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+    padding: 10px 0px 10px 40px;
+     line-height: 1.5;
+}
+
+
+.Education-info{
+    width: 80%;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Education-topic{
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #3AADFF;
+    color: #FFFFFE;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.text-education{
+    font-size: 1rem;
+    padding: 5px 10px;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+    padding: 10px 0px 5px 40px;
+   
+}
+
+.Job-about{
+    width: 80%; 
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 38%;
+}
+
+.Job-topic{
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #3AADFF;
+    color: #FFFFFE;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.job-text{
+    font-size: 1rem;
+    padding: 5px 10px;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+    padding: 10px 0px 5px 40px;
+   
+}
+
+.skill-info{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    
+}
+
+.skill-topic{
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 98%;
+    background-color: #3AADFF;
+    color: #FFFFFE;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.skill-logo{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+   
+}
+ 
+.skill-logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.skill-logo img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    border: solid #3AADFF 2px;
+}
+
+
+.img-skill{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+
+.my-work{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F49F00;
+    height: 100%;
+    width: 100%;
+}
+
+
+@media  (max-width: 768px) {
+    .intro{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo h1{
+        font-size: 1.2rem;
+    }
+
+    .nav-links{
+        gap: 20px;
+        padding-right: 10px;
+        font-size: 0.6rem;
+    }
+
+
+    
+    .left-first{
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .right-first{
+        justify-content: center; /* จัดกึ่งกลางแนวนอน */
+        height: 100%;
+        width: 90%;
+        margin-top: 20px;
+    
+    }
+
+    .header-intro{
+        font-size: 2rem;
+    }
+
+    .text-intro{
+        font-size: 1.2rem;
+    }
+
+    .btn-box-intro{
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .img-intro{
+        width: 80%;
+        height: 50%;
+        
+    }
+
+    
+
+    .about-me{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+   
+    .left-second {
+        width: 80%;
+        height: 50%;
+        margin-left: 0px;
+        overflow:unset;
+        border-radius: 20px;
+    }
+
+   .img-about{
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        border-radius: 20px;
+       
+    }
+
+
+    .right-second{
+        width: 90%;
+        margin-top: 20px;
+    }
+
+     .Person-about{
+        flex-direction: column;
+        align-items: center;
+        height: auto;  
+        width: 100%;
+        
+    } 
+
+   .Job-about{
+        width: 100%;
+        margin-top: 20px;
+
+    }
+
+    .Person-info, .Education-info{
+        width: 100%;
+        margin-top: 20px;
+       padding: 0px 0px 20px 0px;
+    }
+
+    .text-person , .text-education, .job-text{
+        font-size: 0.9rem;  
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .Job-about{
+        height: 40%;
+    }
+
+    .skill-logo{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding-bottom: 100px;
+       
+    }
+
+    .skill-logo img{
+        width: 40px;
+        height: 40px;
+       
+    }
+
+
+  
 }
