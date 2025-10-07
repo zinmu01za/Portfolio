@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -302,8 +305,8 @@
 }
  
 .skill-logo img{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 10px;
     background-color: #FFFFFF;
     padding: 10px;
